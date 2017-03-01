@@ -1,0 +1,16 @@
+1.If 7TB is the available disk space per node (9 disks with 1 TB, 2 disk for operating system etc.
+were excluded.). Assuming initial data size is 600 TB. How will you estimate the number of data
+nodes (n)?
+ now there are totally 7 disks available per node hence to estimate the number of node we have the formula
+  node(n)=available/initial disk size
+according to our problem
+ available disk space=7tb
+ initial data size=600tb
+hence  600/7 =86
+thus estimate number of data nodes.
+
+2.Imagine that you are uploading a file of 500MB into HDFS.100MB of data is successfully
+uploaded into HDFS and another client wants to read the uploaded data while the upload is still in
+progress. What will happen in such a scenario, will the 100 MB of data that is uploaded will it be
+displayed?
+according to this scenario while writing 500 mb file and 100 mb is already written now since the data is already written and so it will be displayed for the user who tries to read it  but the user will not be allowed to acess the data that is under read process
